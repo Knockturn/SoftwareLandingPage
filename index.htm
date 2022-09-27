@@ -6,44 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TaskOptimizer</title>
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="navbar">
       <div class="container">
-        <a href="#">Task<span>Optimizer</span></a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="none"
-          class="mobile-menu"
+        <a class="logo" href="#">Remember<span>That</span></a>
+
+        <img
           id="mobile-cta"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-          />
-        </svg>
+          class="mobile-menu"
+          src="assets/img/menu.svg"
+          alt="Open Navigation"
+        />
+
         <nav>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="none"
-            class="mobile-menu-exit"
+          <img
             id="mobile-exit"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
-            />
-          </svg>
+            class="mobile-menu-exit"
+            src="assets/img/exit.svg"
+            alt="Close Navigation"
+          />
+
           <ul class="primary-nav">
             <li class="current"><a href="#">Home</a></li>
             <li><a href="#">Features</a></li>
             <li><a href="#">Pricing</a></li>
           </ul>
+
           <ul class="secondary-nav">
             <li><a href="#">Contact</a></li>
             <li class="go-premium-cta"><a href="#">Go Premium</a></li>
@@ -75,9 +70,9 @@
       </div>
     </section>
 
-    <section class="features">
+    <section class="features-section">
       <div class="container">
-        <ul>
+        <ul class="features-list">
           <li>Unlimited Tasks</li>
           <li>SMS Task Reminders</li>
           <li>Confetti Explosions Upon Task Completions</li>
