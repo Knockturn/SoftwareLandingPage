@@ -289,7 +289,7 @@ nav {
     padding: 10em 4em;
   }
 
-  .hero .contain {
+  .hero .container {
     display: flex;
     justify-content: space-between;
     text-align: left;
@@ -309,7 +309,7 @@ nav {
     margin-right: 8em;
   }
 
-  .hero.cta {
+  .hero-cta {
     display: flex;
   }
   .primary-cta {
@@ -332,7 +332,6 @@ nav {
 
   .features-section {
     position: relative;
-
     img {
       display: block;
       position: absolute;
@@ -342,7 +341,7 @@ nav {
     }
   }
 
-  .testimonials-section {
+  .testimonials-section ul {
     display: flex;
 
     li {
@@ -356,19 +355,41 @@ nav {
     .container {
       display: flex;
     }
+  }
 
-    .contact-right {
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 45%;
+  .contact-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+
+    iframe {
       height: 100%;
+    }
+  }
+}
 
-      iframe {
-        height: 100%;
+@media only screen and (min-width: 1450px) {
+  .features-section {
+    &:before {
+      content: "";
+      position: absolute;
+      width: 10%;
+      height: 20em;
+      background: var(--primary-color);
+      left: 0;
+      top: -4em;
+    }
 
-        //https://youtu.be/D-h8L5hgW-w?t=7977
-      }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 20em;
+      background: url("/assets/img/dots.svg") no-repeat;
+      left: 4.5em;
+      top: 2em;
     }
   }
 }

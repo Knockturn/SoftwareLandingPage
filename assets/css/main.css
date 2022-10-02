@@ -262,15 +262,15 @@ nav li a:hover {
   section {
     padding: 10em 4em;
   }
-  .hero .contain {
+  .hero .container {
     display: flex;
     justify-content: space-between;
     text-align: left;
   }
-  .hero .contain .left-col {
+  .hero .container .left-col {
     margin: 3em 3em 0 5em;
   }
-  .hero .contain .left-col h1 {
+  .hero .container .left-col h1 {
     font-size: 3em;
     width: 90%;
   }
@@ -278,7 +278,7 @@ nav li a:hover {
     width: 30%;
     margin-right: 8em;
   }
-  .hero.cta {
+  .hero-cta {
     display: flex;
   }
   .primary-cta {
@@ -305,10 +305,10 @@ nav li a:hover {
     width: 350px;
     bottom: -2em;
   }
-  .testimonials-section {
+  .testimonials-section ul {
     display: flex;
   }
-  .testimonials-section li {
+  .testimonials-section ul li {
     margin: 0 1em;
   }
   .contact-section {
@@ -317,14 +317,34 @@ nav li a:hover {
   .contact-section .container {
     display: flex;
   }
-  .contact-section .contact-right {
+  .contact-right {
     position: absolute;
     right: 0;
     top: 0;
     width: 45%;
     height: 100%;
   }
-  .contact-section .contact-right iframe {
+  .contact-right iframe {
     height: 100%;
+  }
+}
+@media only screen and (min-width: 1450px) {
+  .features-section:before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 20em;
+    background: var(--primary-color);
+    left: 0;
+    top: -4em;
+  }
+  .features-section:after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 20em;
+    background: url("/assets/img/dots.svg") no-repeat;
+    left: 4.5em;
+    top: 2em;
   }
 }/*# sourceMappingURL=main.css.map */
